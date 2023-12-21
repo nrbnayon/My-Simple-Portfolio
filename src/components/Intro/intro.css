@@ -1,0 +1,204 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.bg{
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introName{
+    color: yellow;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+}
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #000; /* Add a cursor-like effect */
+    animation: typing 2s steps(20, end) infinite, blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40.5%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #007bff; /* Adjust the color as needed */
+    }
+}
+/* Define different colors for each letter */
+.typing-animation span:nth-child(1),
+.typing-animation span:nth-child(5),
+.typing-animation span:nth-child(9),
+.typing-animation span:nth-child(16) {
+    color: #00FFFF ; /* Color for the 1st, 5th, 9th, 13th, and 16th letter */
+}
+
+.typing-animation span:nth-child(2),
+.typing-animation span:nth-child(6),
+.typing-animation span:nth-child(10),
+.typing-animation span:nth-child(17) {
+    color: #33FF57; /* Color for the 2nd, 6th, 10th, and 17th letter */
+}
+
+.typing-animation span:nth-child(3) {
+    color: #FFFF00; /* Color for the 3rd letter */
+}
+
+.typing-animation span:nth-child(13),
+.typing-animation span:nth-child(4) {
+    color: #FF5733; /* Color for the 4th letter */
+}
+
+.typing-animation span:nth-child(7) {
+    color: #FF00FF; /* Color for the 7th letter */
+}
+
+.typing-animation span:nth-child(14),
+.typing-animation span:nth-child(8) {
+    color: #ea3caa; /* Color for the 8th letter */
+}
+
+/* .btn{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+} */
+/* .button-container {
+    display: flex;
+    justify-content: left; /* Adjust as needed */
+    /* align-items: center; Vertically center the buttons */
+/* } */
+
+/* .cvDownload, .hireMe {
+    text-decoration: none; /* Remove underlines from the links */
+/* } */ 
+
+/* .btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+} */
+
+/* .btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Change color on hover */
+    /* border-color: #0056b3; Change border color on hover */
+/* } */ 
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.cvDownload, .hireMe {
+    text-decoration: none;
+}
+
+.cvBtn {
+    background: white; /*#59d7d3 Change the background color for the Download CV button */
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.hireBtn {
+    background: #00C853; /* Change the background color for the Hire Me button */
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+@media screen and (max-width: 480px){
+
+    .bg{
+        right: -20vw;
+    }
+    .typing-animation{
+        font-size: 3.7vw;
+    }
+}
+@media screen and (max-width: 840px ){
+    .bg{
+        right: -10vw;
+        width: 100%;
+    }
+    .typing-animation{
+        font-size: 3.7vw;
+    }
+}

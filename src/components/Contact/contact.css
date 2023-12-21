@@ -1,0 +1,116 @@
+#contactPage {
+  max-width: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactPageTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.clintDesc {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.clintImgs {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.clintImg {
+  object-fit: cover;
+  width: 23%;
+  min-width: 9rem;
+  margin: auto;
+  padding: 0.25rem;
+}
+.clints {
+  padding: 2rem;
+}
+.contactDesc {
+  font-weight: 300;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.contactForm {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+  background: linear-gradient(45deg, #3498db, #8e44ad);
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.submitBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay;
+  transition: opacity 0.3s;
+}
+
+.submitBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:hover::before {
+  opacity: 0.5;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.link {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.link:hover {
+  transform: scale(1.1); /* Scale the image up by 10% on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+  filter: brightness(1.2); /* Increase brightness on hover (adjust as needed) */
+}
